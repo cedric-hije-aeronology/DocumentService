@@ -2,7 +2,7 @@
 
 namespace DocumentService.Models
 {
-    public class Itinerary
+    public class Ticket
     {
         [JsonPropertyName("document_number")]
         public string DocumentNumber { get; set; }

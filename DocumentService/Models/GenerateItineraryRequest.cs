@@ -1,6 +1,6 @@
 ﻿namespace DocumentService.Models
 {
-    public class SearchTicketRequest : BaseRequest
+    public class GenerateItineraryRequest : BaseRequest
     {
         public string Provider { get; set; }
 
@@ -14,8 +14,6 @@
 
         public string Locator { get; set; }
 
-        public string DocumentNumber { get; set; }
-
-        public decimal PriceItAmount { get; set; }
+        public Dictionary<string, string> // ticketNumber, priceItAmount
     }
 }
